@@ -1,14 +1,19 @@
-// Step 1: Import React
 import * as React from "react";
-// Step 2: Define your component
+import Layout from "../components/layout";
+import Button from "../components/button";
+
 const IndexPage = () => {
   return (
-    <main>
-      <title>Home Page</title>
-      <h1>Welcome to my Gatsby site!</h1>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-    </main>
+    <Layout pageTitle="Home Page">
+      <title>Beatriz Geirinhas</title>
+      <h1>Hey! Thanks for stopping by 👋🏼</h1>
+      <p>
+        A designer with a love affair for frontend development based in
+        Portugal.
+      </p>
+      <Button>ehfb</Button>
+    </Layout>
   );
 };
-// Step 3: Export your component
+
 export default IndexPage;
