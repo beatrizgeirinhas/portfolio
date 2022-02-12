@@ -6,7 +6,8 @@ const StyledContainer = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 15px;
+  align-items: center;
+  padding: 20px 14px;
 `;
 
 const StyledLeft = styled.div`
@@ -20,12 +21,20 @@ const StyledRight = styled.div`
 const Navbar = () => (
   <StyledContainer>
     <StyledLeft>
-      <Link href="/">Beatriz Geirinhas</Link>
+      <Link href="/" variant="contrast" target="_self">
+        Beatriz Geirinhas
+      </Link>
     </StyledLeft>
     <StyledRight>
-      <Link href="/work">Work</Link>
-      <Link href="/about">About</Link>
-      <Link href="/contact">Contact</Link>
+      <Link href="/work" target="_self">
+        Work
+      </Link>
+      <Link href="/about" target="_self">
+        About
+      </Link>
+      <Link href="/contact" target="_self">
+        Contact
+      </Link>
     </StyledRight>
   </StyledContainer>
 );

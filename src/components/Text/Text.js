@@ -14,40 +14,45 @@ export const StyledText = styled(DEFAULT_TAG, {
     size: {
       1: {
         fontSize: "$1",
+        lineHeight: "18px",
       },
       2: {
         fontSize: "$2",
+        lineHeight: "21px",
       },
       3: {
         fontSize: "$3",
+        lineHeight: "24px",
       },
       4: {
         fontSize: "$4",
+        lineHeight: "27px",
       },
       5: {
         fontSize: "$5",
-        lineHeight: "28.5px",
+        lineHeight: "30px",
         letterSpacing: "-.015em",
       },
       6: {
         fontSize: "$6",
-        lineHeight: "31.5px",
+        lineHeight: "33px",
         letterSpacing: "-.016em",
       },
       7: {
         fontSize: "$7",
+        lineHeight: "36px",
         letterSpacing: "-.031em",
         textIndent: "-.005em",
       },
       8: {
         fontSize: "$8",
-        lineHeight: "52.5px",
+        lineHeight: "54px",
         letterSpacing: "-.034em",
         textIndent: "-.018em",
       },
       9: {
         fontSize: "$9",
-        lineHeight: "88.5px",
+        lineHeight: "90px",
         letterSpacing: "-.055em",
         textIndent: "-.025em",
       },
