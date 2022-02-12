@@ -1,15 +1,6 @@
 import { createStitches } from "@stitches/react";
 
-export const {
-  styled,
-  css,
-  globalCss,
-  keyframes,
-  getCssText,
-  theme,
-  createTheme,
-  config,
-} = createStitches({
+export const { styled, css, getCssText, theme } = createStitches({
   theme: {
     colors: {
       gray100: "hsl(0 0% 98.8%)",
@@ -52,9 +43,7 @@ export const {
     bp3: "(min-width: 1200px)",
     bp4: "(min-width: 1800px)",
   },
-  utils: {
-    marginX: (value) => ({ marginLeft: value, marginRight: value }),
-  },
+  utils: {},
   "@font-face": {
     fontFamily: "Inter",
     src: "url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')",
