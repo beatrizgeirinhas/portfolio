@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 
-const StyledLink = styled.a`
+export const StyledLink = styled.a`
   flex-shrink: 0;
   outline: none;
   text-decoration-line: none;

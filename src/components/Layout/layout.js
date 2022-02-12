@@ -1,5 +1,5 @@
 import * as React from "react";
-import Navbar from "./navbar";
+import Navbar from "../Navbar/Navbar";
 import styled from "styled-components";
 
 const StyledMain = styled.main`

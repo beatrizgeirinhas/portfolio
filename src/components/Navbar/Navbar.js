@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import StyledLink from "./Link";
+import { Link, Button } from "../index";
 
 const StyledContainer = styled.nav`
   display: flex;
@@ -20,12 +20,12 @@ const StyledRight = styled.div`
 const Navbar = () => (
   <StyledContainer>
     <StyledLeft>
-      <StyledLink href="/">Beatriz Geirinhas</StyledLink>
+      <Link href="/">Beatriz Geirinhas</Link>
     </StyledLeft>
     <StyledRight>
-      <StyledLink href="/work">Work</StyledLink>
-      <StyledLink href="/about">About</StyledLink>
-      <StyledLink href="/contact">Contact</StyledLink>
+      <Link href="/work">Work</Link>
+      <Link href="/about">About</Link>
+      <Link href="/contact">Contact</Link>
     </StyledRight>
   </StyledContainer>
 );

@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { StyledText } from "./Text";
+import { StyledText } from "../Text/Text";
 
 const Subtitle = ({ children }) => (
   <StyledText

@@ -1,13 +1,11 @@
 import * as React from "react";
-import Layout from "../components/layout";
-import Title from "../components/Title";
-import Subtitle from "../components/Subtitle";
+import { Layout, Title, Subtitle } from "../components/index";
 import styled from "styled-components";
 
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-ontent: flex-end;
+  justify-content: flex-end;
   height: 80vh;
 `;
 
