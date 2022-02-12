@@ -1,6 +1,6 @@
 import * as React from "react";
 import { styled } from "../../stitches.config";
-import Link from "./link";
+import Link from "./Link";
 
 const StyledContainer = styled("nav", {
   display: "flex",
@@ -17,7 +17,7 @@ const StyledRight = styled("div", {
   fontSize: "13px",
 });
 
-const Navbar = ({ children }) => (
+const Navbar = () => (
   <StyledContainer>
     <StyledLeft>
       <Link href="/">Beatriz Geirinhas</Link>

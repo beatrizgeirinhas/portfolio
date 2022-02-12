@@ -6,7 +6,6 @@ const ContactPage = () => {
     <Layout pageTitle="Contact">
       <title>Contact</title>
       <h1>Contact</h1>
-      <p>Hi there! I'm the proud creator of this site.</p>
     </Layout>
   );
 };

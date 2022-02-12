@@ -5,8 +5,7 @@ const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
       <title>About Me</title>
-      <h1>About Me</h1>
-      <p>Hi there! I'm the proud creator of this site.</p>
+      <h1>About</h1>
     </Layout>
   );
 };
