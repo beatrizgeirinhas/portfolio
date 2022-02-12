@@ -15,10 +15,6 @@ export const {
       gray400: "yellow",
       gray500: "lightgray",
     },
-    fonts: {
-      untitled: "Untitled Sans, -apple-system, system-ui, sans-serif",
-      mono: "Söhne Mono, menlo, monospace",
-    },
   },
   media: {
     bp1: "(min-width: 520px)",
@@ -28,5 +24,9 @@ export const {
   },
   utils: {
     marginX: (value) => ({ marginLeft: value, marginRight: value }),
+  },
+  "@font-face": {
+    fontFamily: "Inter",
+    src: "url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')",
   },
 });

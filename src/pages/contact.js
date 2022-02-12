@@ -1,14 +1,14 @@
 import * as React from "react";
 import Layout from "../components/layout";
 
-const AboutPage = () => {
+const ContactPage = () => {
   return (
-    <Layout pageTitle="About Me">
-      <title>About Me</title>
-      <h1>About Me</h1>
+    <Layout pageTitle="Contact">
+      <title>Contact</title>
+      <h1>Contact</h1>
       <p>Hi there! I'm the proud creator of this site.</p>
     </Layout>
   );
 };
 
-export default AboutPage;
+export default ContactPage;

@@ -4,14 +4,16 @@ import Button from "../components/button";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle="Beatriz Geirinhas">
       <title>Beatriz Geirinhas</title>
       <h1>Hey! Thanks for stopping by 👋🏼</h1>
       <p>
-        A designer with a love affair for frontend development based in
+        I'm Gei, a designer with a love affair for frontend development based in
         Portugal.
       </p>
-      <Button>ehfb</Button>
+      <Button variant="gray" size="1">
+        ehfb
+      </Button>
     </Layout>
   );
 };
