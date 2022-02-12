@@ -15,10 +15,10 @@ const StyledLink = styled.a`
   padding-left: 10px;
 `;
 
-const Link = ({ href, variant, size, children }) => (
+const MyLink = ({ href, variant, size, children }) => (
   <StyledLink href={href} variant={variant} size={size}>
     {children}
   </StyledLink>
 );
 
-export default Link;
+export default MyLink;

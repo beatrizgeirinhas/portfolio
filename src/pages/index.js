@@ -7,7 +7,7 @@ import styled from "styled-components";
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-ontent: flex-end;
   height: 80vh;
 `;
 
