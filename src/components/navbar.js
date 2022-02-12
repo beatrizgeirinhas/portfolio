@@ -1,6 +1,6 @@
 import * as React from "react";
 import { styled } from "../../stitches.config";
-import Link from "./Link";
+import StyledLink from "./Link";
 
 const StyledContainer = styled("nav", {
   display: "flex",
@@ -20,12 +20,12 @@ const StyledRight = styled("div", {
 const Navbar = () => (
   <StyledContainer>
     <StyledLeft>
-      <Link href="/">Beatriz Geirinhas</Link>
+      <StyledLink href="/">Beatriz Geirinhas</StyledLink>
     </StyledLeft>
     <StyledRight>
-      <Link href="/work">Work</Link>
-      <Link href="/about">About</Link>
-      <Link href="/contact">Contact</Link>
+      <StyledLink href="/work">Work</StyledLink>
+      <StyledLink href="/about">About</StyledLink>
+      <StyledLink href="/contact">Contact</StyledLink>
     </StyledRight>
   </StyledContainer>
 );
