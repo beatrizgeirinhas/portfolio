@@ -2,14 +2,14 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Title from "../components/Title";
 import Subtitle from "../components/Subtitle";
-import { styled } from "../../stitches.config";
+import styled from "styled-components";
 
-const StyledContainer = styled("div", {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "flex-end",
-  height: "80vh",
-});
+const StyledContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80vh;
+`;
 
 const IndexPage = () => {
   return (

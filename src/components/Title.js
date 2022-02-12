@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "../../stitches.config";
+import styled from "styled-components";
 import { StyledText } from "./Text";
 
 const Title = ({ children }) => (

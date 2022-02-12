@@ -1,19 +1,12 @@
 import * as React from "react";
-import { styled } from "../../stitches.config";
+import styled from "styled-components";
 
-const StyledButton = styled("button", {
-  // Reset
-  all: "unset",
-  alignItems: "center",
-  boxSizing: "border-box",
-  userSelect: "none",
-  "&::before": {
-    boxSizing: "border-box",
-  },
-  "&::after": {
-    boxSizing: "border-box",
-  },
-});
+const StyledButton = styled.button`
+  all: unset;
+  align-items: center;
+  box-sizing: border-box;
+  user-select: none;
+`;
 
 const Button = ({ children }) => <StyledButton>{children}</StyledButton>;
 
