@@ -3,8 +3,7 @@ import { StyledText } from "../Text/Text";
 
 const Subtitle = ({ children }) => (
   <StyledText
-    as="h2"
-    weight={500}
+    as="h1"
     size={{
       "@initial": "5",
       "@bp2": "6",
