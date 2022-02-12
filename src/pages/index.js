@@ -1,6 +1,5 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import Button from "../components/button";
 import Title from "../components/Title";
 import Subtitle from "../components/Subtitle";
 import { styled } from "../../stitches.config";
