@@ -21,7 +21,13 @@ const StyledRight = styled.div`
 const Navbar = () => (
   <StyledContainer>
     <StyledLeft>
-      <Link href="/" variant="contrast" target="_self">
+      <Link
+        href="/"
+        variant="contrast"
+        target="_self"
+        padding="0 2rem 0 0"
+        css={{ lineHeight: "18px" }}
+      >
         Beatriz Geirinhas
       </Link>
     </StyledLeft>
