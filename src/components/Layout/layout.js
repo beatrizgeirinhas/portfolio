@@ -1,10 +1,10 @@
 import * as React from "react";
 import Navbar from "../Navbar/Navbar";
-import styled from "styled-components";
+import { styled } from "../../../stitches.config";
 
-const StyledMain = styled.main`
-  padding: 0 30px 0 30px;
-`;
+const StyledMain = styled("main", {
+  padding: "0 30px 0 30px",
+});
 
 const Layout = ({ pageTitle, children }) => {
   return (

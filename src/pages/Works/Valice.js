@@ -1,44 +1,52 @@
 import * as React from "react";
-import styled from "styled-components";
-import { Layout, Title, Subtitle } from "../../components/index";
+import { navigate } from "gatsby";
+import { styled } from "../../../stitches.config";
+import { Layout, Title, Paragraph, Button } from "../../components/index";
 
-const StyledContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
+const StyledContainer = styled("div", {
+  display: "flex",
+  flexDirection: "row",
+});
 
-const StyledLeft = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-`;
+const StyledLeft = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  width: "38%",
+  marginRight: "3rem",
+});
 
-const StyledRight = styled.div`
-  font-size: 14px;
-`;
+const StyledRight = styled("div", {
+  fontSize: "14px",
+});
 
 const ValicePage = () => {
+  const home = () => {
+    navigate("/");
+  };
   return (
     <Layout pageTitle="Valice">
       <title>Valice</title>
+      <Button onClick={home}>Go Back</Button>
       <Title>Valice</Title>
       <StyledContainer>
         <StyledLeft>
-          <Subtitle>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Subtitle>
+          <Paragraph>
+            This work was done within the scope of the service design class. The
+            goal was to create a service about the topic make fashion circular
+            again.
+            <br />
+            <br /> The service is based on two channels - one digital, which is
+            the application that allows users to enter in contact with the
+            stylist, choose the clothes he want to buy and schedule a trip to
+            the studio. And a second part, this one already physical, which it's
+            the studio.
+          </Paragraph>
         </StyledLeft>
         <StyledRight>
-          <p>February 2022</p>
-          <p>
-            <b>Techonologies:</b> React, Bla, bla
-          </p>
+          <Paragraph>June 2020</Paragraph>
+          <Paragraph>
+            <b>Platforms:</b> Figma, Adobe Illustrator
+          </Paragraph>
         </StyledRight>
       </StyledContainer>
     </Layout>

@@ -3,6 +3,7 @@ import { styled } from "../../../stitches.config";
 
 const StyledLink = styled("a", {
   fontSize: "12px",
+  lineHeight: "26px",
   textDecoration: "none",
   paddingRight: "10px",
   paddingLeft: "10px",
