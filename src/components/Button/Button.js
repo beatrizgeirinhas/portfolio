@@ -16,7 +16,7 @@ const StyledButton = styled("button", {
 });
 
 const Button = ({ children, onClick, disabled }) => {
-  const handleOnClick = React.useCallback(
+  const handleOnClick = useCallback(
     (e) => {
       if (!disabled) {
         onClick(e);

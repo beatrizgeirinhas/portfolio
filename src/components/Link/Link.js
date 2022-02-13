@@ -5,8 +5,6 @@ const StyledLink = styled("a", {
   fontSize: "12px",
   lineHeight: "26px",
   textDecoration: "none",
-  paddingRight: "10px",
-  paddingLeft: "10px",
   textTransform: "uppercase",
   letterSpacing: "0.1em",
   textAlign: "left",
@@ -36,8 +34,14 @@ const StyledLink = styled("a", {
   },
 });
 
-const MyLink = ({ href, variant, size, children, target }) => (
-  <StyledLink href={href} variant={variant} size={size} target={target}>
+const MyLink = ({ href, variant, size, children, target, padding }) => (
+  <StyledLink
+    href={href}
+    variant={variant}
+    size={size}
+    target={target}
+    css={{ padding }}
+  >
     {children}
   </StyledLink>
 );

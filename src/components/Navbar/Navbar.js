@@ -26,10 +26,10 @@ const Navbar = () => (
       </Link>
     </StyledLeft>
     <StyledRight>
-      <Link href="/work" target="_self">
+      <Link href="/work" target="_self" padding="0 2rem 0 0">
         Work
       </Link>
-      <Link href="/about" target="_self">
+      <Link href="/about" target="_self" padding="0 2rem 0 0">
         About
       </Link>
       <Link href="/contact" target="_self">

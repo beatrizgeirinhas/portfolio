@@ -23,8 +23,9 @@ const IndexPage = () => {
         <Link
           href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
           target="_blank"
+          padding="2.5rem 0 0 0"
         >
-          <img src={linkedIn} width="20px" />
+          <img src={linkedIn} width="20px" alt="linkedin" />
         </Link>
       </StyledContainer>
     </Layout>
