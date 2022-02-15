@@ -6,8 +6,8 @@ const Paragraph = ({ children }) => (
     as="h1"
     weight={400}
     size={{
-      "@initial": "1",
-      "@bp2": "2",
+      "@initial": "2",
+      "@bp2": "3",
     }}
   >
     {children}

@@ -19,6 +19,12 @@ const WorkPage = () => {
         <Link href="/Works/Valice" target="_self">
           Valice
         </Link>
+        <Link href="/Works/Thesis" target="_self">
+          Graphic Standard System beyond Computer Science
+        </Link>
+        <Link href="/Works/FPlace" target="_self">
+          FPlace
+        </Link>
       </StyledContainer>
     </Layout>
   );

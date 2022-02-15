@@ -5,42 +5,52 @@ import { Layout, Title, Paragraph, Button } from "../../components/index";
 
 const StyledContainer = styled("div", {
   display: "flex",
-  flexDirection: "row",
+  flexDirection: "column",
+});
+
+const RowContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  "@bp2": { flexDirection: "row" },
 });
 
 const StyledLeft = styled("div", {
   display: "flex",
   flexDirection: "column",
-  width: "38%",
-  marginRight: "3rem",
+  width: "100%",
+  paddingRight: "6rem",
+  "@bp2": { width: "50%" },
 });
 
 const StyledRight = styled("div", {
   fontSize: "14px",
+  paddingTop: "3rem",
 });
 
 const DodocPage = () => {
-  const home = () => {
-    navigate("/");
+  const work = () => {
+    navigate("/work");
   };
   return (
     <Layout pageTitle="dodoc">
       <title>dodoc.</title>
-      <Button onClick={home}>Go Back</Button>
+      <Button onClick={work}>Go Back</Button>
       <Title>dodoc.</Title>
       <StyledContainer>
-        <StyledLeft>
-          <Paragraph></Paragraph>
-        </StyledLeft>
-        <StyledRight>
-          <Paragraph>February 2022</Paragraph>
-          <Paragraph>
-            <b>Platforms:</b> Figma, Adobe Illustrator, Adobe Photoshop
-          </Paragraph>
-          <Paragraph>
-            <b>Tecnologies:</b> ReactJS
-          </Paragraph>
-        </StyledRight>
+        <RowContainer>
+          <StyledLeft>
+            <Paragraph></Paragraph>
+          </StyledLeft>
+          <StyledRight>
+            <Paragraph>February 2022</Paragraph>
+            <Paragraph>
+              <b>Platforms:</b> Figma, Adobe Illustrator, Adobe Photoshop
+            </Paragraph>
+            <Paragraph>
+              <b>Tecnologies:</b> ReactJS
+            </Paragraph>
+          </StyledRight>
+        </RowContainer>
       </StyledContainer>
     </Layout>
   );

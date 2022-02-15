@@ -46,13 +46,13 @@ export const StyledText = styled(DEFAULT_TAG, {
       },
       8: {
         fontSize: "$8",
-        lineHeight: "54px",
+        lineHeight: "48px",
         letterSpacing: "-.034em",
         textIndent: "-.018em",
       },
       9: {
         fontSize: "$9",
-        lineHeight: "90px",
+        lineHeight: "78px",
         letterSpacing: "-.055em",
         textIndent: "-.025em",
       },

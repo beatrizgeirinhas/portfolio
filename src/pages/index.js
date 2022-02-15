@@ -10,6 +10,11 @@ const StyledContainer = styled.div`
   height: 80vh;
 `;
 
+const RowContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 const IndexPage = () => {
   return (
     <Layout pageTitle="Beatriz Geirinhas">
@@ -20,13 +25,29 @@ const IndexPage = () => {
           I'm Beatriz, a designer with a love affair for frontend development
           based in Portugal.
         </Subtitle>
-        <Link
-          href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
-          target="_blank"
-          padding="2.5rem 0 0 0"
-        >
-          <img src={linkedIn} width="20px" alt="linkedin" />
-        </Link>
+        <RowContainer>
+          <Link
+            href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
+            target="_blank"
+            padding="2.5rem 0 0 0"
+          >
+            LinkedIn /
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
+            target="_blank"
+            padding="2.5rem 0 0 0"
+          >
+            Github /
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
+            target="_blank"
+            padding="2.5rem 0 0 0"
+          >
+            Behance
+          </Link>
+        </RowContainer>
       </StyledContainer>
     </Layout>
   );
