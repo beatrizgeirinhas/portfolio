@@ -3,9 +3,6 @@ import { navigate } from "gatsby";
 import { styled } from "../../../stitches.config";
 import { Layout, Title, Paragraph, Button } from "../../components/index";
 import Image1 from "../../images/FPlace/1.jpg";
-import Image2 from "../../images/FPlace/2.jpg";
-import Image3 from "../../images/FPlace/3.jpg";
-import Image4 from "../../images/FPlace/4.jpg";
 
 const PageContainer = styled("div", {
   display: "flex",
@@ -98,11 +95,6 @@ const ValicePage = () => {
         <ColumnContainer>
           <ImagesContainer>
             <img src={Image1} width="50%" alt="Image1" />
-            <img src={Image2} width="50%" alt="Image2" />
-          </ImagesContainer>
-          <ImagesContainer>
-            <img src={Image3} width="50%" alt="Image3" />
-            <img src={Image4} width="50%" alt="Image4" />
           </ImagesContainer>
         </ColumnContainer>
       </PageContainer>
