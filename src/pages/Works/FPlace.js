@@ -2,10 +2,10 @@ import * as React from "react";
 import { navigate } from "gatsby";
 import { styled } from "../../../stitches.config";
 import { Layout, Title, Paragraph, Button } from "../../components/index";
-import Image1 from "../../images/FPlace/1.JPG";
-import Image2 from "../../images/FPlace/2.JPG";
-import Image3 from "../../images/FPlace/3.JPG";
-import Image4 from "../../images/FPlace/4.JPG";
+import Image1 from "../../images/FPlace/1.jpg";
+import Image2 from "../../images/FPlace/2.jpg";
+import Image3 from "../../images/FPlace/3.jpg";
+import Image4 from "../../images/FPlace/4.jpg";
 
 const PageContainer = styled("div", {
   display: "flex",
