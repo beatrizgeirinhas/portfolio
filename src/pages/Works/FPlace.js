@@ -2,7 +2,6 @@ import * as React from "react";
 import { navigate } from "gatsby";
 import { styled } from "../../../stitches.config";
 import { Layout, Title, Paragraph, Button } from "../../components/index";
-import Image1 from "../../images/FPlace/1.jpg";
 
 const PageContainer = styled("div", {
   display: "flex",
@@ -93,9 +92,7 @@ const ValicePage = () => {
           </StyledRight>
         </RowContainer>
         <ColumnContainer>
-          <ImagesContainer>
-            <img src={Image1} width="50%" alt="Image1" />
-          </ImagesContainer>
+          <ImagesContainer></ImagesContainer>
         </ColumnContainer>
       </PageContainer>
     </Layout>
