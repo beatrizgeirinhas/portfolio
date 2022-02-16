@@ -6,3 +6,7 @@ html {
     background-color:hsl(0 0% 93.7%);
     color: #0E1116;
 }
+
+body{
+    margin: 0;
+}
