@@ -80,7 +80,8 @@ const ExperienceTitle = styled("div", {
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
-  paddingBottom: "2rem",
+  paddingBottom: "3rem",
+  paddingtOP: "1rem",
 });
 
 const Experience = styled("div", {
@@ -89,7 +90,6 @@ const Experience = styled("div", {
   alignItems: "center",
   justifyContent: "space-between",
   width: "80vw",
-  "@bp2": { width: "40vw" },
 });
 
 const AboutPage = () => {
@@ -181,6 +181,7 @@ const AboutPage = () => {
                 <Divider
                   css={{
                     margin: "0.5rem 0rem 2rem 0rem ",
+                    borderColor: "hsl(0 0% 93.7%)",
                   }}
                 />
               </ColumnContainer>
@@ -206,6 +207,7 @@ const AboutPage = () => {
                 <Divider
                   css={{
                     margin: "0.5rem 0rem 2rem 0rem ",
+                    borderColor: "hsl(0 0% 93.7%)",
                   }}
                 />
               </ColumnContainer>
@@ -231,6 +233,7 @@ const AboutPage = () => {
                 <Divider
                   css={{
                     margin: "0.5rem 0rem 2rem 0rem ",
+                    borderColor: "hsl(0 0% 93.7%)",
                   }}
                 />
               </ColumnContainer>
