@@ -10,7 +10,18 @@ const StyledLink = styled("a", {
   textAlign: "left",
   variants: {
     variant: {
-      subtle: {
+      primary: {
+        color: "#0051ED",
+        cursor: "pointer",
+        "&:hover": {
+          transition:
+            "textDecoration 0.5s, textUnderlineOffset 0.5s, color 0.5s",
+          textDecoration: "underline",
+          textUnderlineOffset: "4px",
+        },
+      },
+
+      secondary: {
         color: "$gray900",
         "&:hover": {
           transition:
@@ -20,6 +31,7 @@ const StyledLink = styled("a", {
           color: "#0051ED",
         },
       },
+
       contrast: {
         fontWeight: 600,
         color: "$gray950",
@@ -27,14 +39,15 @@ const StyledLink = styled("a", {
           textDecoration: "none",
         },
       },
-      active: {
+
+      disabled: {
         color: "$gray700",
         cursor: "default",
       },
     },
   },
   defaultVariants: {
-    variant: "subtle",
+    variant: "secondary",
   },
 });
 

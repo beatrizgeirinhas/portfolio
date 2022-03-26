@@ -32,7 +32,7 @@ const ColumnContainer = styled("div", {
 const WorkPage = () => {
   return (
     <PageContainer>
-      <Navbar variant1="active" />
+      <Navbar variant1="disabled" />
       <Layout pageTitle="Work">
         <title>Work</title>
         <StyledContainer>

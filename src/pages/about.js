@@ -10,6 +10,7 @@ import {
   Navbar,
 } from "../components/index";
 import Yo from "../images/eu.png";
+import CV from "../beatriz-geirinhas-CV.pdf";
 
 const StyledContainer = styled("div", {
   display: "flex",
@@ -96,7 +97,7 @@ const Experience = styled("div", {
 const AboutPage = () => {
   return (
     <div>
-      <Navbar variant2="active" />
+      <Navbar variant2="disabled" />
       <Layout pageTitle="About Me">
         <title>About Me</title>
         <PageContainer>
@@ -126,7 +127,9 @@ const AboutPage = () => {
             <ColumnContainer>
               <ExperienceTitle>
                 <Subtitle>Experience</Subtitle>
-                <Link>Download CV</Link>
+                <Link variant="primary" href={CV} target="_blank">
+                  Download CV
+                </Link>
               </ExperienceTitle>
 
               <ColumnContainer>
