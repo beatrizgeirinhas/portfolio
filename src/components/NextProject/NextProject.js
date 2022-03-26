@@ -22,12 +22,12 @@ const StyledContainer = styled("a", {
   backgroundColor: "$gray100",
 });
 
-const NextProject = ({ title, notes, src, href, target }) => {
+const NextProject = ({ title, notes, src, href, target, onClick }) => {
   return (
     <StyledContainer href={href} target={target}>
       <StyledTitle>{title}</StyledTitle>
       <StyledNotes>{notes}</StyledNotes>
-      <Button>View Project</Button>
+      <Button onClick={onClick}>View Project →</Button>
     </StyledContainer>
   );
 };

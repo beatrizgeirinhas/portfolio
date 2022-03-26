@@ -9,6 +9,8 @@ import {
   NextProject,
   Footer,
 } from "../../components/index";
+import ValueProposition from "../../images/Valice/value proposition canvas.png";
+import Blueprint from "../../images/Valice/blue print.png";
 import Image1 from "../../images/Valice/1.png";
 import Image2 from "../../images/Valice/2.png";
 import Image3 from "../../images/Valice/3.png";
@@ -56,13 +58,16 @@ const ValicePage = () => {
   const work = () => {
     navigate("/work");
   };
+  const thesis = () => {
+    navigate("/Works/Thesis");
+  };
   return (
     <div>
       <Layout pageTitle="Valice">
         <title>Valice</title>
         <PageContainer>
           <Button onClick={work} icon="ArrowRight">
-            Back to works
+            ← Back to works
           </Button>
           <Title>Valice</Title>
           <RowContainer>
@@ -89,6 +94,15 @@ const ValicePage = () => {
               </Paragraph>
             </StyledRight>
           </RowContainer>
+          <StyledRight>
+            <Paragraph>Define, strategize, and plan</Paragraph>
+          </StyledRight>
+          <img
+            src={ValueProposition}
+            width="100%"
+            alt="ImaValuePropositionge1"
+          />
+          <img src={Blueprint} width="100%" alt="Blueprint" />
           <ImagesContainer>
             <img src={Image1} width="50%" alt="Image1" />
             <img src={Image2} width="50%" alt="Image2" />
@@ -101,7 +115,7 @@ const ValicePage = () => {
           </ImagesContainer>
         </PageContainer>
       </Layout>
-      <NextProject title="Graphic Standard System" />
+      <NextProject title="Graphic Standard System" onClick={thesis} />
       <Footer />
     </div>
   );

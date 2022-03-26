@@ -34,12 +34,20 @@ const DodocPage = () => {
   return (
     <Layout pageTitle="dodoc">
       <title>dodoc.</title>
-      <Button onClick={work}>Go Back</Button>
+      <Button onClick={work}> ← Back to works</Button>
       <Title>dodoc.</Title>
       <StyledContainer>
         <RowContainer>
           <StyledLeft>
-            <Paragraph></Paragraph>
+            <Paragraph>
+              Instead of simply creating a pattern for the brand, we developed a
+              modular system that can represent any message, whether physical or
+              digital. The basis for this system is a set of elements with which
+              we are able to create materials that are always different from
+              each other, mirroring the spirit and objective of dodoc:
+              transforming complex and boring processes into a method that is
+              easier to use and understand.
+            </Paragraph>
           </StyledLeft>
           <StyledRight>
             <Paragraph>February 2022</Paragraph>

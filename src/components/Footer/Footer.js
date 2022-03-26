@@ -8,6 +8,7 @@ const StyledContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 20px 14px;
+  font-size: 10px;
 `;
 
 const Footer = () => (

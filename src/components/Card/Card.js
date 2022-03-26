@@ -2,8 +2,9 @@ import React from "react";
 import { styled } from "../../../stitches.config";
 
 const StyledTitle = styled("div", {
-  fontSize: "24px",
+  fontSize: "20px",
   color: "$gray900",
+  paddingTop: "1rem",
 });
 
 const StyledNotes = styled("div", {
@@ -14,7 +15,7 @@ const StyledNotes = styled("div", {
 const ImageContainer = styled("img", {
   display: "flex",
   flexDirection: "column",
-  width: "30%",
+  width: "248px",
   opacity: 0.85,
 });
 
@@ -23,6 +24,8 @@ const StyledContainer = styled("a", {
   flexDirection: "column",
   justifyContent: "center",
   textDecoration: "none",
+  padding: "2rem 2rem",
+  boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.1)",
   "&:hover": {
     [`& ${StyledTitle}`]: {
       transition: "color 0.5s",
@@ -42,7 +45,7 @@ const StyledContainer = styled("a", {
 const Card = ({ title, notes, src, href, target }) => {
   return (
     <StyledContainer href={href} target={target}>
-      <ImageContainer src={src} width="50%" alt={src} />
+      <ImageContainer src={src} alt={src} />
       <StyledTitle>{title}</StyledTitle>
       <StyledNotes>{notes}</StyledNotes>
     </StyledContainer>

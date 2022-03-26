@@ -17,12 +17,12 @@ const StyledLink = styled("a", {
             "textDecoration 0.5s, textUnderlineOffset 0.5s, color 0.5s",
           textDecoration: "underline",
           textUnderlineOffset: "4px",
-          color: "$gray10000",
+          color: "#0051ED",
         },
       },
       contrast: {
-        fontWeight: 500,
-        color: "$gray1000",
+        fontWeight: 600,
+        color: "$gray950",
         "&:hover": {
           textDecoration: "none",
         },

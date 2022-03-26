@@ -28,7 +28,7 @@ const Navbar = () => (
         padding="0 2rem 0 0"
         css={{ lineHeight: "18px" }}
       >
-        Beatriz Geirinhas
+        <bold>Beatriz Geirinhas</bold>
       </Link>
     </StyledLeft>
     <StyledRight>
