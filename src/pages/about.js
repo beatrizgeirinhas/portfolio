@@ -18,13 +18,19 @@ const StyledContainer = styled("div", {
   "@bp2": { padding: "0 5rem" },
 });
 
-const RowContainer1 = styled("div", {
+const FirstContainer = styled("div", {
   display: "flex",
   flexDirection: "column-reverse",
   "@bp2": { flexDirection: "row" },
 });
 
-const RowContainer2 = styled("div", {
+const SecondContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  "@bp2": { flexDirection: "row" },
+});
+
+const ThirdContainer = styled("div", {
   display: "flex",
   flexDirection: "column",
   "@bp2": { flexDirection: "row" },
@@ -60,10 +66,30 @@ const Note = styled("div", {
   padding: "2rem 0",
 });
 
+const OwnParagraph = styled(Paragraph, {
+  paddingTop: "2rem",
+});
+
 const ImageContainer = styled("img", {
   width: "100%",
   padding: "2rem 0",
   "@bp1": { width: "400px", padding: "0" },
+});
+
+const ExperienceTitle = styled("div", {
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-between",
+  paddingBottom: "2rem",
+});
+
+const Experience = styled("div", {
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "space-between",
+  width: "80vw",
+  "@bp2": { width: "40vw" },
 });
 
 const AboutPage = () => {
@@ -73,7 +99,7 @@ const AboutPage = () => {
       <Layout pageTitle="About Me">
         <title>About Me</title>
         <PageContainer>
-          <RowContainer1>
+          <FirstContainer>
             <ColumnContainer>
               <ImageContainer src={Yo} alt="Yo" />
             </ColumnContainer>
@@ -92,20 +118,129 @@ const AboutPage = () => {
                 </Subtitle>
               </StyledContainer>
             </ColumnContainer>
-          </RowContainer1>
+          </FirstContainer>
           <SecondDivider />
           <Note>/02</Note>
-          <RowContainer2>
+          <SecondContainer>
             <ColumnContainer>
-              <Subtitle>Experience</Subtitle>
-              <Paragraph>To-do</Paragraph>
+              <ExperienceTitle>
+                <Subtitle>Experience</Subtitle>
+                <Link>Download CV</Link>
+              </ExperienceTitle>
+
+              <ColumnContainer>
+                <OwnParagraph>doDOC</OwnParagraph>
+                <Experience>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Product Designer
+                  </Note>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Jan 2022 → Present
+                  </Note>
+                </Experience>
+                <Experience>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Communication Designer
+                  </Note>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Ago 2021 → Jan 2022
+                  </Note>
+                </Experience>
+                <Experience>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Frontend Developer
+                  </Note>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Set 2019 → Dez 2021
+                  </Note>
+                </Experience>
+                <Divider
+                  css={{
+                    margin: "0.5rem 0rem 2rem 0rem ",
+                  }}
+                />
+              </ColumnContainer>
+
+              <ColumnContainer>
+                <OwnParagraph>The Loop co.</OwnParagraph>
+                <Experience>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Web & Graphic Designer
+                  </Note>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Out 2018 → Jul 2019
+                  </Note>
+                </Experience>
+                <Divider
+                  css={{
+                    margin: "0.5rem 0rem 2rem 0rem ",
+                  }}
+                />
+              </ColumnContainer>
+
+              <ColumnContainer>
+                <OwnParagraph>Whitesmith</OwnParagraph>
+                <Experience>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Summer Internship
+                  </Note>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Jul 2018 → Ago 2018
+                  </Note>
+                </Experience>
+                <Divider
+                  css={{
+                    margin: "0.5rem 0rem 2rem 0rem ",
+                  }}
+                />
+              </ColumnContainer>
             </ColumnContainer>
-          </RowContainer2>
+          </SecondContainer>
           <SecondDivider />
           <Note>Let’s chat 👋🏼 </Note>
-          <RowContainer2>
+          <ThirdContainer>
             <Paragraph> geirinhas.beatriz@gmail.com</Paragraph>
-          </RowContainer2>
+          </ThirdContainer>
         </PageContainer>
       </Layout>
       <Footer />

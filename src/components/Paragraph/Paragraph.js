@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledText } from "../Text/Text";
 
-const Paragraph = ({ children }) => (
+const Paragraph = ({ children, css }) => (
   <StyledText
     as="h1"
     weight={400}
