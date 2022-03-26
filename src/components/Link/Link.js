@@ -8,6 +8,7 @@ const StyledLink = styled("a", {
   textTransform: "uppercase",
   letterSpacing: "0.1em",
   textAlign: "left",
+  width: "fit-content",
   variants: {
     variant: {
       primary: {
