@@ -60,10 +60,11 @@ const SecondDivider = styled("div", {
 const Note = styled("div", {
   fontFamily: "Roboto Mono, monospace",
   fontWeight: 400,
-  fontSize: "14px",
-  lineHeight: "22px",
+  fontSize: "12px",
+  lineHeight: "18px",
   color: "#7B7B7B",
   padding: "2rem 0",
+  "@bp2": { fontSize: "14px", lineHeight: "22px" },
 });
 
 const OwnParagraph = styled(Paragraph, {
