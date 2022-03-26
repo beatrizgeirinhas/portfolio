@@ -101,6 +101,15 @@ const SpecificExperienceContainer = styled("div", {
   "@bp2": { paddingTop: "4rem" },
 });
 
+const ExperienceNote = styled("div", {
+  fontFamily: "Roboto Mono, monospace",
+  fontWeight: 400,
+  fontSize: "12px",
+  lineHeight: "18px",
+  color: "#7B7B7B",
+  "@bp2": { fontSize: "14px", lineHeight: "22px" },
+});
+
 const AboutPage = () => {
   return (
     <div>
@@ -142,128 +151,128 @@ const AboutPage = () => {
               <SpecificExperienceContainer>
                 <OwnParagraph>doDOC</OwnParagraph>
                 <Experience>
-                  <Note
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Product Designer
-                  </Note>
-                  <Note
+                  </ExperienceNote>
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Jan 2022 → Present
-                  </Note>
+                  </ExperienceNote>
                 </Experience>
                 <Experience>
-                  <Note
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Communication Designer
-                  </Note>
-                  <Note
+                  </ExperienceNote>
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Ago 2021 → Jan 2022
-                  </Note>
+                  </ExperienceNote>
                 </Experience>
                 <Experience>
-                  <Note
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Frontend Developer
-                  </Note>
-                  <Note
+                  </ExperienceNote>
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Set 2019 → Dez 2021
-                  </Note>
+                  </ExperienceNote>
                 </Experience>
               </SpecificExperienceContainer>
 
               <SpecificExperienceContainer>
                 <OwnParagraph>The Loop co.</OwnParagraph>
                 <Experience>
-                  <Note
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Web & Graphic Designer
-                  </Note>
-                  <Note
+                  </ExperienceNote>
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Out 2018 → Jul 2019
-                  </Note>
+                  </ExperienceNote>
                 </Experience>
               </SpecificExperienceContainer>
 
               <SpecificExperienceContainer>
                 <OwnParagraph>Whitesmith</OwnParagraph>
                 <Experience>
-                  <Note
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Summer Internship
-                  </Note>
-                  <Note
+                  </ExperienceNote>
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Jul 2018 → Ago 2018
-                  </Note>
+                  </ExperienceNote>
                 </Experience>
               </SpecificExperienceContainer>
 
               <SpecificExperienceContainer>
                 <OwnParagraph>jeKnowledge</OwnParagraph>
                 <Experience>
-                  <Note
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Senior Member
-                  </Note>
-                  <Note
+                  </ExperienceNote>
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Dez 2018 → Abr 2019
-                  </Note>
+                  </ExperienceNote>
                 </Experience>
                 <Experience>
-                  <Note
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Junior Member
-                  </Note>
-                  <Note
+                  </ExperienceNote>
+                  <ExperienceNote
                     css={{
                       padding: "0rem 0rem",
                     }}
                   >
                     Out 2017 → Dez 2018
-                  </Note>
+                  </ExperienceNote>
                 </Experience>
               </SpecificExperienceContainer>
             </ColumnContainer>
