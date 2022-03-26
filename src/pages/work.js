@@ -9,24 +9,17 @@ import Image4 from "../images/4.png";
 const PageContainer = styled("div", {
   display: "flex",
   flexDirection: "column",
+  justifyContent: "flex-start",
   height: "100vh",
 });
 
 const StyledContainer = styled("div", {
   display: "flex",
-  flexDirection: "row",
-  justifyContent: "center",
-  alignItems: "center",
-});
-
-const RowContainer = styled("div", {
-  display: "flex",
-  flexDirection: "row",
-});
-
-const ColumnContainer = styled("div", {
-  display: "flex",
   flexDirection: "column",
+  justifyContent: "flex-start",
+  alignItems: "center",
+  flexWrap: "wrap",
+  "@bp2": { flexDirection: "row" },
 });
 
 const WorkPage = () => {
@@ -36,42 +29,34 @@ const WorkPage = () => {
       <Layout pageTitle="Work">
         <title>Work</title>
         <StyledContainer>
-          <RowContainer>
-            <Card
-              orientation="vertical"
-              title="Graphic Standard System"
-              src={Image1}
-              href="/Works/Thesis"
-              target="_self"
-            />
-            <ColumnContainer>
-              <RowContainer>
-                <Card
-                  orientation="square"
-                  title="Valice"
-                  src={Image2}
-                  href="/Works/Valice"
-                  target="_self"
-                />
-                <Card
-                  orientation="square"
-                  title="Dodoc Brand Identity"
-                  src={Image4}
-                  href="/Works/Dodoc"
-                  target="_self"
-                />
-              </RowContainer>
-              <RowContainer>
-                <Card
-                  orientation="square"
-                  title="FPlace"
-                  src={Image3}
-                  href="/Works/FPlace"
-                  target="_self"
-                />
-              </RowContainer>
-            </ColumnContainer>
-          </RowContainer>
+          <Card
+            title="Graphic Standard System"
+            src={Image1}
+            href="/Works/Thesis"
+            target="_self"
+            notes="branding, graphic design, systems"
+          />
+          <Card
+            title="Valice"
+            src={Image2}
+            href="/Works/Valice"
+            target="_self"
+            notes="product design, interaction design, brading"
+          />
+          <Card
+            title="Dodoc Brand Identity"
+            src={Image4}
+            href="/Works/Dodoc"
+            target="_self"
+            notes="branding, graphic design, systems"
+          />
+          <Card
+            title="FPlace"
+            src={Image3}
+            href="/Works/FPlace"
+            target="_self"
+            notes="code, product design, systems"
+          />
         </StyledContainer>
       </Layout>
       <Footer />

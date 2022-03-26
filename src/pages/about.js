@@ -75,7 +75,8 @@ const OwnParagraph = styled(Paragraph, {
 const ImageContainer = styled("img", {
   width: "100%",
   padding: "2rem 0",
-  "@bp1": { width: "400px", padding: "0" },
+  "@bp1": { width: "400px", padding: "2rem 0" },
+  "@bp2": { padding: "0" },
 });
 
 const ExperienceTitle = styled("div", {

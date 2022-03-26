@@ -1,69 +1,76 @@
 import React from "react";
 import { styled } from "../../../stitches.config";
+import { Link } from "../index";
 
 const StyledTitle = styled("div", {
-  fontSize: "20px",
+  fontSize: "24px",
   fontWeight: "400",
-  color: "$gray900",
+  color: "$gray1000",
 });
 
 const StyledNotes = styled("div", {
   paddingTop: "1rem",
   fontSize: "16px",
   fontWeight: "300",
-  color: "$gray800",
-});
-
-const ImageContainer = styled("img", {
-  display: "flex",
-  flexDirection: "column",
-  opacity: 1,
-  variants: {
-    orientation: {
-      vertical: {
-        width: "248px",
-        heiht: "634px",
-      },
-      square: {
-        width: "248px",
-        heiht: "248px",
-      },
-    },
-  },
-  defaultVariants: {
-    orientation: "square",
-  },
+  color: "$gray1000",
 });
 
 const StyledContainer = styled("a", {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  textDecoration: "none",
-  padding: "2rem 2rem",
-  "&:hover": {
-    [`& ${StyledTitle}`]: {
-      transition: "color 0.75s",
-      color: "$gray1000",
-    },
-    [`& ${StyledNotes}`]: {
-      transition: "color 0.75s",
-      color: "$gray1000",
-    },
-    [`& ${ImageContainer}`]: {
-      transition: "filter 0.75s",
-      filter: "drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.1))",
-    },
-  },
+  "@bp2": { flexDirection: "column" },
 });
 
-const Card = ({ title, notes, src, href, target, orientation }) => {
+const FirstContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  width: "100%",
+  "@bp2": { flexDirection: "row", justifyContent: "space-evenly" },
+});
+
+const ColumnContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  width: "100%",
+  padding: "0",
+  "@bp2": { width: "50%", padding: "2rem 4rem" },
+});
+
+const Divider = styled("div", {
+  border: " 0.5px solid #A7A7A7",
+  marginBottom: "0rem",
+  "@bp2": { marginBottom: "4rem" },
+});
+
+const Note = styled("div", {
+  fontFamily: "Roboto Mono, monospace",
+  fontWeight: 400,
+  fontSize: "12px",
+  lineHeight: "18px",
+  color: "#7B7B7B",
+  padding: "2rem 0",
+  "@bp2": { fontSize: "14px", lineHeight: "22px" },
+});
+
+const ImageContainer = styled("img", {
+  padding: "2rem 0",
+});
+
+const Card = ({ title, notes, src, href, target }) => {
   return (
-    <StyledContainer href={href} target={target} orientation={orientation}>
+    <FirstContainer href={href} target={target}>
       <ImageContainer src={src} alt={src} />
-      <StyledNotes>{notes}</StyledNotes>
-      <StyledTitle>{title}</StyledTitle>
-    </StyledContainer>
+      <ColumnContainer>
+        <StyledContainer>
+          <Divider />
+          <StyledTitle>{title}</StyledTitle>
+          <StyledNotes>{notes}</StyledNotes>
+        </StyledContainer>
+        <Link href={href}>View Project →</Link>
+      </ColumnContainer>
+    </FirstContainer>
   );
 };
 
