@@ -3,12 +3,14 @@ import { styled } from "../../../stitches.config";
 
 const StyledTitle = styled("div", {
   fontSize: "20px",
+  fontWeight: "400",
   color: "$gray900",
-  paddingTop: "1rem",
 });
 
 const StyledNotes = styled("div", {
+  paddingTop: "1rem",
   fontSize: "16px",
+  fontWeight: "300",
   color: "$gray800",
 });
 
@@ -45,8 +47,8 @@ const Card = ({ title, notes, src, href, target }) => {
   return (
     <StyledContainer href={href} target={target}>
       <ImageContainer src={src} alt={src} />
-      <StyledTitle>{title}</StyledTitle>
       <StyledNotes>{notes}</StyledNotes>
+      <StyledTitle>{title}</StyledTitle>
     </StyledContainer>
   );
 };
