@@ -104,7 +104,7 @@ const SpecificExperienceContainer = styled("div", {
 const ExperienceNote = styled("div", {
   fontFamily: "Roboto Mono, monospace",
   fontWeight: 400,
-  fontSize: "12px",
+  fontSize: "11px",
   lineHeight: "18px",
   color: "#7B7B7B",
   "@bp2": { fontSize: "14px", lineHeight: "22px" },
