@@ -7,6 +7,7 @@ import {
   Link,
   Paragraph,
   Footer,
+  Navbar,
 } from "../components/index";
 import Yo from "../images/eu.jpeg";
 
@@ -32,6 +33,7 @@ const PageContainer = styled("div", {
 const AboutPage = () => {
   return (
     <div>
+      <Navbar variant2="active" />
       <Layout pageTitle="About Me">
         <title>About Me</title>
         <PageContainer>
@@ -61,6 +63,10 @@ const AboutPage = () => {
           </RowContainer>
           <Paragraph>download</Paragraph>
           <Link>pt CV</Link>
+          <br />
+          <br />
+          <Subtitle>Let's talk 😊</Subtitle>
+          <Paragraph>geirinhas.beatriz@gmail.com</Paragraph>
         </PageContainer>
       </Layout>
       <Footer />

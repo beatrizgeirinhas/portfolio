@@ -27,6 +27,10 @@ const StyledLink = styled("a", {
           textDecoration: "none",
         },
       },
+      active: {
+        color: "$gray700",
+        cursor: "default",
+      },
     },
   },
   defaultVariants: {

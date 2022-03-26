@@ -25,7 +25,6 @@ const StyledContainer = styled("a", {
   justifyContent: "center",
   textDecoration: "none",
   padding: "2rem 2rem",
-  boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.1)",
   "&:hover": {
     [`& ${StyledTitle}`]: {
       transition: "color 0.5s",

@@ -8,3 +8,4 @@ export { default as Paragraph } from "./Paragraph/Paragraph";
 export { default as Icon } from "./Icon/Icon";
 export { default as NextProject } from "./NextProject/NextProject";
 export { default as Footer } from "./Footer/Footer";
+export { default as Navbar } from "./Navbar/Navbar";

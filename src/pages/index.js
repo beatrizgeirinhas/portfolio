@@ -1,5 +1,12 @@
 import * as React from "react";
-import { Layout, Title, Subtitle, Link, Footer } from "../components/index";
+import {
+  Layout,
+  Title,
+  Subtitle,
+  Link,
+  Footer,
+  Navbar,
+} from "../components/index";
 import styled from "styled-components";
 import linkedIn from "../images/linkedin.png";
 
@@ -24,6 +31,7 @@ const LinkContainer = styled.div`
 const IndexPage = () => {
   return (
     <div>
+      <Navbar />
       <Layout pageTitle="Beatriz Geirinhas">
         <title>Beatriz Geirinhas</title>
         <StyledContainer>

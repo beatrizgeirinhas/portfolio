@@ -1,6 +1,6 @@
 import * as React from "react";
 import { styled } from "../../stitches.config";
-import { Layout, Link, Card, Footer } from "../components/index";
+import { Layout, Card, Footer, Navbar } from "../components/index";
 import Image1 from "../images/1.png";
 import Image2 from "../images/2.png";
 import Image3 from "../images/3.png";
@@ -29,6 +29,7 @@ const RowContainer = styled("div", {
 const WorkPage = () => {
   return (
     <PageContainer>
+      <Navbar variant1="active"/>
       <Layout pageTitle="Work">
         <title>Work</title>
         <StyledContainer>
