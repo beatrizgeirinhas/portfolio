@@ -53,7 +53,6 @@ const SecondDivider = styled("div", {
 
 const Note = styled("div", {
   fontFamily: "Roboto Mono, monospace",
-  fontStyle: "normal",
   fontWeight: 400,
   fontSize: "14px",
   lineHeight: "22px",

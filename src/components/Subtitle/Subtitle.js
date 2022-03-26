@@ -5,7 +5,7 @@ const Subtitle = ({ children }) => (
   <StyledText
     as="h1"
     size={{
-      "@initial": "4",
+      "@initial": "3",
       "@bp2": "5",
     }}
   >
