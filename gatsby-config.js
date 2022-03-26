@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Beatriz Geirinhas`,
     siteUrl: `https://www.yourdomain.tld`,
-    content: `#bcbbff`,
     name: `theme-color`,
+    content: `hsl(0 0% 93.7%)`,
   },
   plugins: [
     {
