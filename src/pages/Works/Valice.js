@@ -8,6 +8,7 @@ import {
   Button,
   NextProject,
   Footer,
+  Navbar,
 } from "../../components/index";
 import ValueProposition from "../../images/Valice/value proposition canvas.png";
 import Blueprint from "../../images/Valice/blue print.png";
@@ -63,6 +64,7 @@ const ValicePage = () => {
   };
   return (
     <div>
+      <Navbar />
       <Layout pageTitle="Valice">
         <title>Valice</title>
         <PageContainer>

@@ -8,6 +8,7 @@ import {
   Button,
   NextProject,
   Footer,
+  Navbar,
 } from "../../components/index";
 import Image1 from "../../images/Thesis/1.png";
 import Image2 from "../../images/Thesis/2.png";
@@ -57,6 +58,7 @@ const ValicePage = () => {
   };
   return (
     <div>
+      <Navbar />
       <Layout pageTitle="Graphic Standard System beyond Computer Science">
         <title>Graphic Standard System beyond Computer Science</title>
         <PageContainer>

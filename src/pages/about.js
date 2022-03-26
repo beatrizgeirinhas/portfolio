@@ -9,25 +9,62 @@ import {
   Footer,
   Navbar,
 } from "../components/index";
-import Yo from "../images/eu.jpeg";
+import Yo from "../images/eu.png";
 
 const StyledContainer = styled("div", {
   display: "flex",
   flexDirection: "column",
-  width: "100%",
-  "@bp2": { width: "40%" },
+  padding: "0 0",
+  "@bp2": { padding: "0 5rem" },
 });
 
-const RowContainer = styled("div", {
+const RowContainer1 = styled("div", {
+  display: "flex",
+  flexDirection: "column-reverse",
+  "@bp2": { flexDirection: "row" },
+});
+
+const RowContainer2 = styled("div", {
   display: "flex",
   flexDirection: "column",
   "@bp2": { flexDirection: "row" },
 });
 
+const ColumnContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+});
+
 const PageContainer = styled("div", {
   display: "flex",
   flexDirection: "column",
-  padding: "5rem 0rem",
+  padding: "6rem 1rem",
+  "@bp2": { padding: "4rem 12rem" },
+});
+
+const Divider = styled("div", {
+  border: " 0.5px solid #A7A7A7",
+});
+
+const SecondDivider = styled("div", {
+  border: " 0.5px solid #A7A7A7",
+  marginTop: "6rem",
+});
+
+const Note = styled("div", {
+  fontFamily: "Roboto Mono, monospace",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "14px",
+  lineHeight: "22px",
+  color: "#7B7B7B",
+  padding: "2rem 0",
+});
+
+const ImageContainer = styled("img", {
+  width: "100%",
+  padding: "2rem 0",
+  "@bp1": { width: "400px", padding: "0" },
 });
 
 const AboutPage = () => {
@@ -37,36 +74,39 @@ const AboutPage = () => {
       <Layout pageTitle="About Me">
         <title>About Me</title>
         <PageContainer>
-          <RowContainer>
-            <StyledContainer>
-              <Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                voluptatem.
-              </Paragraph>
-            </StyledContainer>
-            <img src={Yo} width="50%" alt="Yo" />
-          </RowContainer>
-          <Paragraph>download</Paragraph>
-          <Link>pt CV</Link>
-          <br />
-          <br />
-          <Subtitle>Let's talk 😊</Subtitle>
-          <Paragraph>geirinhas.beatriz@gmail.com</Paragraph>
+          <RowContainer1>
+            <ColumnContainer>
+              <ImageContainer src={Yo} alt="Yo" />
+            </ColumnContainer>
+            <ColumnContainer>
+              <StyledContainer>
+                <Divider />
+                <Note>/01</Note>
+                <Subtitle>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </Subtitle>
+              </StyledContainer>
+            </ColumnContainer>
+          </RowContainer1>
+          <SecondDivider />
+          <Note>/02</Note>
+          <RowContainer2>
+            <ColumnContainer>
+              <Subtitle>Experience</Subtitle>
+              <Paragraph>To-do</Paragraph>
+            </ColumnContainer>
+          </RowContainer2>
+          <SecondDivider />
+          <Note>Let’s chat 👋🏼 </Note>
+          <RowContainer2>
+            <Paragraph> geirinhas.beatriz@gmail.com</Paragraph>
+          </RowContainer2>
         </PageContainer>
       </Layout>
       <Footer />

@@ -17,8 +17,22 @@ const StyledNotes = styled("div", {
 const ImageContainer = styled("img", {
   display: "flex",
   flexDirection: "column",
-  width: "248px",
-  opacity: 0.85,
+  opacity: 1,
+  variants: {
+    orientation: {
+      vertical: {
+        width: "248px",
+        heiht: "634px",
+      },
+      square: {
+        width: "248px",
+        heiht: "248px",
+      },
+    },
+  },
+  defaultVariants: {
+    orientation: "square",
+  },
 });
 
 const StyledContainer = styled("a", {
@@ -29,23 +43,23 @@ const StyledContainer = styled("a", {
   padding: "2rem 2rem",
   "&:hover": {
     [`& ${StyledTitle}`]: {
-      transition: "color 0.5s",
+      transition: "color 0.75s",
       color: "$gray1000",
     },
     [`& ${StyledNotes}`]: {
-      transition: "color 0.5s",
+      transition: "color 0.75s",
       color: "$gray1000",
     },
     [`& ${ImageContainer}`]: {
-      transition: "opacity 0.5s",
-      opacity: 1,
+      transition: "filter 0.75s",
+      filter: "drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.1))",
     },
   },
 });
 
-const Card = ({ title, notes, src, href, target }) => {
+const Card = ({ title, notes, src, href, target, orientation }) => {
   return (
-    <StyledContainer href={href} target={target}>
+    <StyledContainer href={href} target={target} orientation={orientation}>
       <ImageContainer src={src} alt={src} />
       <StyledNotes>{notes}</StyledNotes>
       <StyledTitle>{title}</StyledTitle>

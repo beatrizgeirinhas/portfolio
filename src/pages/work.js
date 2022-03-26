@@ -17,51 +17,60 @@ const StyledContainer = styled("div", {
   flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",
-  flexWrap: "wrap",
 });
 
 const RowContainer = styled("div", {
   display: "flex",
   flexDirection: "row",
-  flexWrap: "wrap",
+});
+
+const ColumnContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
 });
 
 const WorkPage = () => {
   return (
     <PageContainer>
-      <Navbar variant1="active"/>
+      <Navbar variant1="active" />
       <Layout pageTitle="Work">
         <title>Work</title>
         <StyledContainer>
           <RowContainer>
             <Card
-              title="dodoc"
-              notes="branding, ui/ux"
-              src={Image4}
-              href="/Works/Dodoc"
-              target="_self"
-            />
-            <Card
-              title="Valice"
-              notes="branding, ui/ux"
-              src={Image1}
-              href="/Works/Valice"
-              target="_self"
-            />
-            <Card
+              orientation="vertical"
               title="Graphic Standard System"
-              notes="branding, systems"
-              src={Image2}
+              src={Image1}
               href="/Works/Thesis"
               target="_self"
             />
-            <Card
-              title="FPlace"
-              notes="branding, ui/ux"
-              src={Image3}
-              href="/Works/FPlace"
-              target="_self"
-            />
+            <ColumnContainer>
+              <RowContainer>
+                <Card
+                  orientation="square"
+                  title="Valice"
+                  src={Image2}
+                  href="/Works/Valice"
+                  target="_self"
+                />
+                <Card
+                  orientation="square"
+                  title="Dodoc Brand Identity"
+                  src={Image4}
+                  href="/Works/Dodoc"
+                  target="_self"
+                />
+              </RowContainer>
+              <RowContainer>
+                <Card
+                  orientation="square"
+                  title="FPlace"
+                  src={Image3}
+                  href="/Works/FPlace"
+                  target="_self"
+                />
+              </RowContainer>
+            </ColumnContainer>
           </RowContainer>
         </StyledContainer>
       </Layout>

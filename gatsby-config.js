@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: `Beatriz Geirinhas`,
@@ -21,6 +23,14 @@ module.exports = {
         background_color: `#F8F8F8`,
         display: `standalone`,
         icon: `src/images/icon.png`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
       },
     },
   ],

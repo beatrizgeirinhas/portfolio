@@ -8,6 +8,7 @@ import {
   Button,
   NextProject,
   Footer,
+  Navbar,
 } from "../../components/index";
 import Image1 from "../../images/Test/1.jpg";
 import Image2 from "../../images/Test/2.jpg";
@@ -59,6 +60,7 @@ const ValicePage = () => {
   };
   return (
     <div>
+      <Navbar />
       <Layout pageTitle="FPlace">
         <title>FPlace</title>
         <PageContainer>
