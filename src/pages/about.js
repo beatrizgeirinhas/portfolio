@@ -34,7 +34,7 @@ const SecondContainer = styled("div", {
 const ThirdContainer = styled("div", {
   display: "flex",
   flexDirection: "column",
-  "@bp2": { flexDirection: "row" },
+  paddingTop: "2rem",
 });
 
 const ColumnContainer = styled("div", {
@@ -241,12 +241,60 @@ const AboutPage = () => {
                   }}
                 />
               </ColumnContainer>
+
+              <ColumnContainer>
+                <OwnParagraph>jeKnowledge</OwnParagraph>
+                <Experience>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Senior Member
+                  </Note>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Dez 2018 → Abr 2019
+                  </Note>
+                </Experience>
+                <Experience>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Junior Member
+                  </Note>
+                  <Note
+                    css={{
+                      padding: "0rem 0rem",
+                    }}
+                  >
+                    Out 2017 → Dez 2018
+                  </Note>
+                </Experience>
+                <Divider
+                  css={{
+                    margin: "0.5rem 0rem 2rem 0rem ",
+                    borderColor: "hsl(0 0% 93.7%)",
+                  }}
+                />
+              </ColumnContainer>
             </ColumnContainer>
           </SecondContainer>
           <SecondDivider />
           <Note>Let’s chat 👋🏼 </Note>
           <ThirdContainer>
             <Paragraph> geirinhas.beatriz@gmail.com</Paragraph>
+            <Link
+              href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
+              target="_blank"
+            >
+              LinkedIn
+            </Link>
           </ThirdContainer>
         </PageContainer>
       </Layout>
