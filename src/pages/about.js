@@ -94,6 +94,13 @@ const Experience = styled("div", {
   width: "80vw",
 });
 
+const SpecificExperienceContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  paddingTop: "3rem",
+  "@bp2": { paddingTop: "4rem" },
+});
+
 const AboutPage = () => {
   return (
     <div>
@@ -132,7 +139,7 @@ const AboutPage = () => {
                 </Link>
               </ExperienceTitle>
 
-              <ColumnContainer>
+              <SpecificExperienceContainer>
                 <OwnParagraph>doDOC</OwnParagraph>
                 <Experience>
                   <Note
@@ -182,15 +189,9 @@ const AboutPage = () => {
                     Set 2019 → Dez 2021
                   </Note>
                 </Experience>
-                <Divider
-                  css={{
-                    margin: "0.5rem 0rem 2rem 0rem ",
-                    borderColor: "hsl(0 0% 93.7%)",
-                  }}
-                />
-              </ColumnContainer>
+              </SpecificExperienceContainer>
 
-              <ColumnContainer>
+              <SpecificExperienceContainer>
                 <OwnParagraph>The Loop co.</OwnParagraph>
                 <Experience>
                   <Note
@@ -208,15 +209,9 @@ const AboutPage = () => {
                     Out 2018 → Jul 2019
                   </Note>
                 </Experience>
-                <Divider
-                  css={{
-                    margin: "0.5rem 0rem 2rem 0rem ",
-                    borderColor: "hsl(0 0% 93.7%)",
-                  }}
-                />
-              </ColumnContainer>
+              </SpecificExperienceContainer>
 
-              <ColumnContainer>
+              <SpecificExperienceContainer>
                 <OwnParagraph>Whitesmith</OwnParagraph>
                 <Experience>
                   <Note
@@ -234,15 +229,9 @@ const AboutPage = () => {
                     Jul 2018 → Ago 2018
                   </Note>
                 </Experience>
-                <Divider
-                  css={{
-                    margin: "0.5rem 0rem 2rem 0rem ",
-                    borderColor: "hsl(0 0% 93.7%)",
-                  }}
-                />
-              </ColumnContainer>
+              </SpecificExperienceContainer>
 
-              <ColumnContainer>
+              <SpecificExperienceContainer>
                 <OwnParagraph>jeKnowledge</OwnParagraph>
                 <Experience>
                   <Note
@@ -276,13 +265,7 @@ const AboutPage = () => {
                     Out 2017 → Dez 2018
                   </Note>
                 </Experience>
-                <Divider
-                  css={{
-                    margin: "0.5rem 0rem 2rem 0rem ",
-                    borderColor: "hsl(0 0% 93.7%)",
-                  }}
-                />
-              </ColumnContainer>
+              </SpecificExperienceContainer>
             </ColumnContainer>
           </SecondContainer>
           <SecondDivider />
