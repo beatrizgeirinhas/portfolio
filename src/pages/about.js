@@ -127,14 +127,20 @@ const AboutPage = () => {
                 <Divider />
                 <Note>/01</Note>
                 <Subtitle>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
+                  Never though that my love for creativity and passion with
+                  perfection would lead me to be a product designer based in
+                  Portugal but yup, that’s me 👋🏼👩🏽💻
                 </Subtitle>
+                <Paragraph>
+                  I firmly believe that a product designer should know a bit of
+                  coding and if you give be both, I will be the happiest kid in
+                  the block 🤸🏽
+                  <br />I always try to take on complex problems and come up
+                  with intuitive, functional, and simple design solutions that
+                  will help create a cohesive experience across the entire
+                  user’s journey. The user is always in the center of all my
+                  decisions. 🎯
+                </Paragraph>
               </StyledContainer>
             </ColumnContainer>
           </FirstContainer>

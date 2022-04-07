@@ -13,8 +13,8 @@ import linkedIn from "../images/linkedin.png";
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 80vh;
+  justify-content: space-between;
+  height: 100vh;
 `;
 
 const RowContainer = styled.div`
@@ -30,49 +30,47 @@ const LinkContainer = styled.div`
 
 const IndexPage = () => {
   return (
-    <div>
+    <StyledContainer>
       <Navbar />
       <Layout pageTitle="Beatriz Geirinhas">
         <title>Beatriz Geirinhas</title>
-        <StyledContainer>
-          <Title>Hey! Thanks for stopping by 👋🏼</Title>
-          <Subtitle>
-            I'm Beatriz, a designer with a love affair for frontend development
-            based in Portugal.
-          </Subtitle>
-          <RowContainer>
-            <LinkContainer>
-              <Link
-                href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
-                target="_blank"
-                padding="2.5rem 0 0 0"
-              >
-                LinkedIn
-              </Link>
-            </LinkContainer>
-            <LinkContainer>
-              <Link
-                href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
-                target="_blank"
-                padding="2.5rem 0 0 0"
-              >
-                Github
-              </Link>
-            </LinkContainer>
-            <LinkContainer>
-              <Link
-                href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
-                target="_blank"
-                padding="2.5rem 0 0 0"
-              >
-                Behance
-              </Link>
-            </LinkContainer>
-          </RowContainer>
-        </StyledContainer>
+        <Title>Hey! Thanks for stopping by 👋🏼</Title>
+        <Subtitle>
+          I'm Beatriz, a designer with a love affair for frontend development
+          based in Portugal.
+        </Subtitle>
+        <RowContainer>
+          <LinkContainer>
+            <Link
+              href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
+              target="_blank"
+              padding="2.5rem 0 0 0"
+            >
+              LinkedIn
+            </Link>
+          </LinkContainer>
+          <LinkContainer>
+            <Link
+              href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
+              target="_blank"
+              padding="2.5rem 0 0 0"
+            >
+              Github
+            </Link>
+          </LinkContainer>
+          <LinkContainer>
+            <Link
+              href="https://www.linkedin.com/in/beatriz-geirinhas-21a2a4159/"
+              target="_blank"
+              padding="2.5rem 0 0 0"
+            >
+              Behance
+            </Link>
+          </LinkContainer>
+        </RowContainer>
       </Layout>
       <Footer />
-    </div>
+    </StyledContainer>
   );
 };
 
